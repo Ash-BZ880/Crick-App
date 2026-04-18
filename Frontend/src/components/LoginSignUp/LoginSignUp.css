@@ -1,0 +1,139 @@
+.login-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 500px;
+  margin: 50px auto;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  background-color: #f8fdff;
+  font-family: 'Arial', sans-serif;
+}
+
+.adjusted-container {
+  margin-top: 80px; /* Pushes content below AppBar */
+  min-height: 600px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #3f51b5;
+  margin-bottom: 20px;
+}
+
+.admin-access-msg {
+  color: black;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 14px;
+}
+
+.login-right {
+  flex: 1 1 50%;
+  box-sizing: border-box;
+  min-width: 300px;
+}
+
+/* Right side styling */
+.login-right {
+  background-color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: none;
+}
+
+.heading  {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.login-right input {
+  padding: 12px 18px;
+  margin: 10px 0;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-btn,
+.signup-btn {
+  padding: 12px 24px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn {
+  background-color: #3f51b5;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.signup-btn {
+  background-color: #f2e603;
+  color: black;
+}
+
+.login-btn:hover {
+  background-color: #32006b;
+}
+
+.signup-btn:hover {
+  background-color: #e8db00;
+}
+
+.error-msg {
+  color: red;
+  font-size: 0.9rem;
+  margin: 10px 0;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    border-radius: 20px;
+    height: 100%; 
+  }
+
+  .login-right {
+    border-left: none;
+    border-radius: 0 0 20px 20px;
+    border-top: none;
+  }
+
+  .login-right {
+    padding: 40px 20px;
+  }
+
+}
+
+.toggle-msg {
+  margin-top: 1rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.toggle-link {
+  color: blue;
+  cursor: pointer;
+  text-decoration: none;
+}

@@ -1,0 +1,15 @@
+# CMD
+
+set NODE_OPTIONS=--openssl-legacy-provider
+npm start
+
+// Issue 
+1) Runout Model UI 
+2) User side UI real time Improvement 
+3) Apply standard UI 
+4) Undo last over ball 
+5) Undo last ball after end of match will left button in disable state forever 
+
+// FEATURE ACPECTS
+// Prime Mode (New Feature : Admin -> Name Owner: (Other Payment details) -> Payment -> Email -> Admin login page eable)
+// Registration for match + Payment (New Feature)

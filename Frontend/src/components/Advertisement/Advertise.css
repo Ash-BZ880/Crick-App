@@ -1,0 +1,43 @@
+.advertisement-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px;
+  background: #f9f9f9;
+  margin-top: 100px;
+}
+
+.advertisement-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.scroll-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scrollLeft 30s linear infinite;
+}
+
+.scroll-image {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  margin-right: 15px;
+  border-radius: 10px;
+}
+
+/* Smooth slow horizontal scroll */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

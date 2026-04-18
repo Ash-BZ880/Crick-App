@@ -1,0 +1,29 @@
+.profile-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  /* margin-top: 150px; */
+}
+
+.circular-photo1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 8px;
+}
+
+.circular-photo1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.profile-name1 {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 0.2rem;
+  color: #333;
+}

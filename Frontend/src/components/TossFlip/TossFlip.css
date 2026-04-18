@@ -1,0 +1,68 @@
+.container9 {
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* IMAGE */
+.image {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transform-style: preserve-3d;
+}
+
+/* PHASE 1: FAST + BLUR */
+.spin-fast {
+  animation: flipFast 0.7s linear;
+}
+
+.blur {
+  filter: blur(19px);
+}
+
+/* PHASE 2: SLOW + CLEAR */
+.spin-slow {
+  animation: flipSlow 0.8s ease-out;
+}
+
+/* RESULT TEXT */
+.text {
+  font-size: 1.0rem;
+  color: #333;
+}
+
+/* BUTTON */
+.flip-btn {
+  margin-top: 10px !important;
+  background-color: #3f51b5 !important;
+  color: white !important;
+}
+
+/* ANIMATIONS */
+@keyframes flipFast {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(2160deg);
+  }
+}
+
+@keyframes flipSlow {
+  from {
+    transform: rotateY(2160deg);
+  }
+  to {
+    transform: rotateY(2520deg);
+  }
+}

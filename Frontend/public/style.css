@@ -1,0 +1,11 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#root{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: aqua; */
+    min-width: 415px;
+}

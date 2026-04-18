@@ -1,0 +1,137 @@
+/* CONTAINER */
+.stars-container {
+  padding: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* CARD */
+.table-card {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.table-title {
+  text-align: center;
+  margin-bottom: 10px;
+  background-color: #3f51b5;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+}
+
+/* TABLE WRAPPER */
+.table-container {
+  overflow-x: auto;
+}
+
+/* TABLE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+  table-layout: fixed; /* IMPORTANT: aligns columns across tables */
+}
+
+/* CELLS */
+.table th,
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-variant-numeric: tabular-nums; /* better number alignment */
+}
+
+/* HEADER */
+.table th {
+  background: #f4f4f4;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+/* ===== COLUMN WIDTH + ALIGNMENT ===== */
+
+/* Pos */
+.table th:nth-child(1),
+.table td:nth-child(1) {
+  width: 60px;
+  text-align: left;
+}
+
+/* Player */
+.table th:nth-child(2),
+.table td:nth-child(2) {
+  width: 220px;
+  text-align: left;
+}
+
+/* Stats columns */
+.table th:nth-child(n+3),
+.table td:nth-child(n+3) {
+  text-align: right;
+}
+
+/* PLAYER CELL */
+.player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: #3f51b5;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.team {
+  font-size: 11px;
+  color: gray;
+}
+
+/* ROW HOVER (optional enhancement) */
+.table tbody tr:hover {
+  background: #f9f9f9;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .table {
+    font-size: 12px;
+    min-width: 500px;
+  }
+
+  .avatar {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    font-size: 12px;
+  }
+
+  .name {
+    font-size: 13px;
+  }
+
+  .team {
+    font-size: 10px;
+  }
+}

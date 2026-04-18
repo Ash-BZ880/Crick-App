@@ -1,0 +1,26 @@
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 16px;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  margin-top: auto; /* ensures it sticks to bottom if space */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+}
